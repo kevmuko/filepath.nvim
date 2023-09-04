@@ -11,7 +11,7 @@ local default_options = {
     modified = '●',
     readonly = '',
     unnamed = '[No Name]',
-    separator = '',
+    separator = '  ',
   },
   highlights = {
     modified = 'Constant',
@@ -134,7 +134,7 @@ function M:update_status()
   self:update_filestatus()
 
   local separator = self:hl_text(self.options.symbols.separator, self.options.highlights.separator)
-  return table.concat(self.parts, ' ' .. separator .. ' ')
+  return table.concat(self.parts, separator)
 end
 
 return M
