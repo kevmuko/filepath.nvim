@@ -3,7 +3,9 @@
 Lualine plugin that nicely shows your filepath. Use it conjunction with
 `nvim-navic` or `aerial.nvim` in your winbar.
 
-```
+![Preview](https://i.imgur.com/NKEDNW8.png)
+
+```lua
 local default_options = {
   symbols = {
     default = '',
